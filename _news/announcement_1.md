@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-10
+date: 2015-10-3
 inline: true
 related_posts: false
 ---
