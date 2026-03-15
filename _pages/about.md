@@ -31,6 +31,6 @@ I am currently a `Bioinformatics` Ph.D. candidate at North Carolina State Univer
 
 My research interests span `microbiome`, `gut-brain axis`, `measurement bias`, and `modeling`.
 
-Previously, I earned my M.Sc. in Biotechnology from Technische Hochschule Mannheim, Germany. During this period, I completed my internship and master's thesis at [RLP AgroScience](https://www.agroscience.de/), where I evaluated the anthocyanin gene as a marker using a dual binary vector system in tobacco plants.
+Previously, I earned my M.Sc. in Biotechnology from [Technische Hochschule Mannheim] (https://www.hs-mannheim.de/), Germany. During this period, I completed my internship and master's thesis at [RLP AgroScience](https://www.agroscience.de/), where I evaluated the anthocyanin gene as a marker using a dual binary vector system in tobacco plants.
 
-I earned my B.Eng. in Bioengineering from Ege University, Turkiye. There, I worked on developing a secondary metabolite elimination medium for the *in vitro* cultivation of the mastic tree in [Aynur Gurel`s Plant Lab](https://unisis.ege.edu.tr/researcher=aynur.gurel).
+I earned my B.Eng. in Bioengineering from Ege University, Turkiye. There, I worked on developing a secondary metabolite elimination medium for the *in vitro* cultivation of the mastic tree in Aynur Gurel`s Plant Lab.
