@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="mailto:o.kuddar@gmail.com">o.kuddar@gmail.com</a>
+subtitle: "North Carolina, US. <a href='mailto:o.kuddar@gmail.com'>o.kuddar@gmail.com</a>"
 
 profile:
   align: right
