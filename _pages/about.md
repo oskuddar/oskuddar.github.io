@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: mailto:o.kuddar@gmail.com
+permalink: /
 subtitle: <a href='#'>o.kuddar@gmail.com</a>. o.kuddar@gmail.com
 
 profile:
