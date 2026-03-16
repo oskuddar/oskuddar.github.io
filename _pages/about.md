@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  📍 North Carolina, US.<br>
+  📍 North Carolina, USA.<br>
   ✉️ <a href="mailto:o.kuddar@gmail.com">o.kuddar@gmail.com</a>
 
 profile:
