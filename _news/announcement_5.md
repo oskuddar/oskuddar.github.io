@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attended the [Triangle Universities Startup Bootcamp](https://otc.duke.edu/news/triangle-universities-startup-workshop-academic-entrepreneurs-get-an-intensive-course-in-venture/) in Durham, NC (supported by the [NCSU Innovation and Entrepreneurship](https://entrepreneurship.ncsu.edu/)).
+Attended the [Triangle Universities Startup Bootcamp](https://otc.duke.edu/news/triangle-universities-startup-workshop-academic-entrepreneurs-get-an-intensive-course-in-venture/) in Durham, USA (supported by the [NCSU Innovation and Entrepreneurship](https://entrepreneurship.ncsu.edu/)).
