@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attended the [American Society for Microbiology (ASM) Microbe 2024](https://asm.org/) conference in Atlanta.
+Attended the [American Society for Microbiology (ASM) Microbe 2024](https://asm.org/) conference in Atlanta, USA.
