@@ -9,6 +9,6 @@ scholar_userid: 1-wpavIAAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-  logo: https://cdn.prod.website-files.com/62a0a0168756b795debc65bc/6862469207e5d6b29127bc31_791ac3ab0dddebdbe93c67a87e9cdd28_cloudmark-white-transparent.png # can be png, svg, jpg
+  logo: https://cdn.prod.website-files.com/62a0a0168756b795debc65bc/686246aab0ebdf5a75a453df_cloudmark-black-transparent.png # can be png, svg, jpg
   title: Custom Social
   url: https://soundcloud.com/versatilefractalism
