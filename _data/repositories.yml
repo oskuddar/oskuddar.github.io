@@ -1,8 +1,6 @@
 github_users:
   - oskuddar
 
-repo_description_lines_max: 3
-
 github_repos:
   - oskuddar/trnL_DB
   - oskuddar/DNA_Metabarcoding
