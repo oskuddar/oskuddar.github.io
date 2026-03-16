@@ -5,9 +5,9 @@ title: teaching
 description: 
 nav: true
 nav_order: 6
-calendar: true
+calendar: false
 ---
 
-#{% include calendar.liquid calendar_id='test@gmail.com' timezone='America/New_York' %}
+{% include calendar.liquid calendar_id='test@gmail.com' timezone='America/New_York' %}
 
 {% include courses.liquid %}
