@@ -1,9 +1,11 @@
 "ACTA":
-  url: https://aapt.scitation.org/journal/ajp
+  url: https://acpa.botany.pl/
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"JCI":
+  url: https://www.jci.org/
+  color: "#27F549"
 
-"Vision":
+"CHOM":
+  url: https://www.cell.com/cell-host-microbe/home
   color: "#009f36"
