@@ -444,12 +444,15 @@ ninja.data = [{
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
+              window.location.href = "/news/announcement_2_/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "news-i-started-my-ph-d-in-bioinformatics-at-callahan-lab-at-north-carolina-state-university",
           title: 'I started my Ph.D. in Bioinformatics at Callahan Lab at North Carolina State...',
+          description: "",
+          section: "News",},{id: "news-presented-my-poster-titled-trnl-database-generation-and-curation-at-the-genomic-sciences-graduate-student-association",
+          title: 'Presented my poster titled “trnL Database Generation and Curation” at the Genomic Sciences...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
