@@ -448,7 +448,7 @@ ninja.data = [{
             },},{id: "news-i-started-my-ph-d-in-bioinformatics-at-callahan-lab-at-north-carolina-state-university",
           title: 'I started my Ph.D. in Bioinformatics at Callahan Lab at North Carolina State...',
           description: "",
-          section: "News",},{id: "news-presented-my-poster-titled-trnl-database-generation-and-curation-at-the-genomic-sciences-graduate-student-association",
+          section: "News",},{id: "news-presented-my-poster-titled-trnl-database-generation-and-curation-at-the-genomic-sciences-graduate-student-association-ncsu",
           title: 'Presented my poster titled “trnL Database Generation and Curation” at the Genomic Sciences...',
           description: "",
           section: "News",},{id: "news-won-the-symposium-presentation-award-for-a-15-minute-talk-titled-validating-dna-metabarcoding-for-characterization-of-pollen-from-surface-soils-at-the-genomic-sciences-symposium-ncsu",
