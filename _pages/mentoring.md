@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /mentoring/
 title: mentoring
 description: 
 nav: true
