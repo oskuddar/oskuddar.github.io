@@ -48,7 +48,7 @@
 
         abbr {
           display: inline-block;
-          background-color: #6c5ce7;
+          background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
 
@@ -173,17 +173,9 @@
         border-color: var(--global-text-color);
       }
     }
-
-    li:nth-child(5n+1) .abbr abbr { background-color: #6c5ce7; }
-    li:nth-child(5n+2) .abbr abbr { background-color: #00b894; }
-    li:nth-child(5n+3) .abbr abbr { background-color: #0984e3; }
-    li:nth-child(5n+4) .abbr abbr { background-color: #e17055; }
-    li:nth-child(5n+5) .abbr abbr { background-color: #fdcb6e; }
-
     div.award.hidden {
       border: dashed 1px var(--global-bg-color);
     }
-
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
