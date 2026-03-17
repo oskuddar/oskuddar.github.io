@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /roles/
-title: Roles
+title: roles
 show_title: false
 description:
 nav: true
@@ -23,7 +23,7 @@ students:
     result: "<u>Outcome:</u> Rasaq joined the Callahan Lab as a Ph.D. student."
 ---
 
-<h3>Teaching</h3>
+<h3><strong>Teaching</strong></h3>
 
 {% for class_entry in page.classes %}
 <div class="card mt-3 p-3">
@@ -39,7 +39,9 @@ students:
 </div>
 {% endfor %}
 
-<h3>Mentees</h3>
+<br>
+
+<h3><strong>Mentees</strong></h3>
 
 {% for student_item in page.students %}
 <div class="card mt-3 p-3">
