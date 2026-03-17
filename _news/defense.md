@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-I `successfully defended my dissertation` titled “Validating DNA Metabarcoding for Characterization of Pollen from Surface Soils.”
+I `successfully defended my dissertation` titled “Evaluation of DNA metabarcoding for characterization of pollen in surface soil samples with potential forensic applications”.
 
