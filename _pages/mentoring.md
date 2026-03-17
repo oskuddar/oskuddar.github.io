@@ -1,17 +1,15 @@
 ---
 layout: page
 permalink: /mentoring/
-title: mentoring
+title: Mentees
 description:
 nav: true
 nav_order: 6
 students:
-  - name: Student Name 1
-    role: Undergraduate student
-    topic: Project/topic
-  - name: Student Name 2
-    role: Graduate student
-    topic: Project/topic
+  - name: Rasaq Awosemo (2025 - Present)
+    role: Ph.D. student
+    topic: Academic mentorship — Provided guidance on graduate school preparation, research direction, and career development.
+    result: Outcome — [Rasaq](https://callahanlab.cvm.ncsu.edu/team/) joined the Callahan Lab as a Ph.D. student.
 ---
 
 {% for student_item in page.students %}
@@ -19,5 +17,7 @@ students:
   <h3>{{ student_item.name }}</h3>
   <p>{{ student_item.role }}</p>
   <p>{{ student_item.topic }}</p>
+  <p>{{ student_item.result }}</p>
 </div>
 {% endfor %}
+---
