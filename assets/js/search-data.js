@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/mentoring/";
           },
-        },{id: "nav-github",
-          title: "GitHub",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-github",
+          title: "GitHub",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
           title: "CV",
