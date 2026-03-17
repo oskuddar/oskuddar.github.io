@@ -5,7 +5,7 @@ title: mentoring
 description: "<h3>Mentees:</h3>"
 show_title: false
 nav: true
-nav_order: 6
+nav_order: 3
 students:
   - name: Rasaq Awosemo (2025 - Present)
     role: Bioinformatics Ph.D. student

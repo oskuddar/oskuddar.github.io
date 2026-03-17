@@ -5,7 +5,7 @@ title: teaching
 show_title: false
 description:
 nav: true
-nav_order: 6
+nav_order: 4
 classes:
   - name: "MB588 – Microbiome Analysis, *Lecturer: Dr. C. Hawkes*"
     role: "Teaching Assistant (TA)"
