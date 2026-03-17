@@ -4,7 +4,7 @@ permalink: /mentoring/
 title: mentoring
 description: "<h3>Mentees:</h3>"
 show_title: false
-nav: true
+nav: false
 nav_order: 3
 students:
   - name: Rasaq Awosemo (2025 - Present)
