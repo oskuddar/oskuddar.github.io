@@ -41,7 +41,7 @@ students:
 
 <br>
 
-<h3><strong>Mentees</strong></h3>
+<h3><strong>Mentorship</strong></h3>
 
 {% for student_item in page.students %}
 <div class="card mt-3 p-3">
