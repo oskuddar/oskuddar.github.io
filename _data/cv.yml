@@ -31,7 +31,7 @@ cv:
       - institution: Technische Hochschule Mannheim
         location: Mannheim, DE
         url: https://www.english.hs-mannheim.de/the-university.html
-        area: Bioinformatics
+        area: Biotechnology
         studyType: M.Sc.
         start_date: ""
         end_date: ""
@@ -88,7 +88,8 @@ cv:
       - title: Symposium Presentation Award
         date: 2023
         awarder: NCSU Genetics and Genomics Academy
-        summary: Awarded for outstanding presentation (15-min talk).
+        summary: "<u>Title:</u> Validating DNA Metabarcoding for Characterization of Pollen from Surface Soils
+                - Awarded for outstanding 15-min talk."
 
     Publications:
       - title: Practical and cost-effective method for the isolation of pollen grains from various sources
@@ -130,7 +131,7 @@ cv:
         keywords: "Microbiome, Gut-Brain Axis (GBA), Measurement bias, Probabilistic Modeling"
 
     Certificates:
-      - name: Technology, Entrepreneurship & Commercialization Certificate
+      - name: MBA - Technology, Entrepreneurship & Commercialization Certificate
         date: 2025
         issuer: North Carolina State University
         icon: fa-solid fa-address-card
