@@ -2,7 +2,7 @@
 layout: page
 permalink: /mentoring/
 title: mentoring
-description: Mentees:
+description: Mentees
 show_title: false
 nav: true
 nav_order: 6
