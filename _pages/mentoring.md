@@ -2,13 +2,13 @@
 layout: page
 permalink: /mentoring/
 title: mentoring
-description: "<h3>Mentees</h3>"
+description: "<h3>Mentees:</h3>"
 show_title: false
 nav: true
 nav_order: 6
 students:
   - name: Rasaq Awosemo (2025 - Present)
-    role: Ph.D. student
+    role: Bioinformatics Ph.D. student
     topic: Academic mentorship — Provided guidance on graduate school preparation, research direction, and career development.
     result: Outcome — Rasaq joined the Callahan Lab as a Ph.D. student.
 ---
