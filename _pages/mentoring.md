@@ -2,7 +2,7 @@
 layout: page
 permalink: /mentoring/
 title: mentoring
-description: Mentees
+description: "<h3>Mentees</h3>"
 show_title: false
 nav: true
 nav_order: 6
@@ -12,8 +12,6 @@ students:
     topic: Academic mentorship — Provided guidance on graduate school preparation, research direction, and career development.
     result: Outcome — [Rasaq](https://callahanlab.cvm.ncsu.edu/team/) joined the Callahan Lab as a Ph.D. student.
 ---
-
-I
 
 {% for student_item in page.students %}
 <div class="card mt-3 p-3">
