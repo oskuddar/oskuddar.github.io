@@ -11,14 +11,6 @@ profile:
   image: prof_pic.jpg
   image_circular: true
   more_info: >
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -34,6 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<br><br>
 I am currently a **Bioinformatics Ph.D. candidate** at North Carolina State University, graduating in May 2026. I am advised by [Benjamin J. Callahan](https://callahanlab.cvm.ncsu.edu/team) and [Kelly A. Meiklejohn](https://researchers.westernsydney.edu.au/en/persons/kelly-meiklejohn/). In my doctoral research, I applied bioinformatics to forensic science, where I compared measurement methods in terms of concordance, spatial localization, and climate prediction.
 
 My research interests span `microbiome`, `gut-brain axis`, `measurement bias`, `probabilistic modeling`and `Bayesian inference`.
