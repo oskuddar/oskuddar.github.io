@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /mentoring/
-title: Mentees
-description:
+title: mentoring
+description: Mentees:
+show_title: false
 nav: true
 nav_order: 6
 students:
@@ -17,7 +18,7 @@ students:
   <h3>{{ student_item.name }}</h3>
   <p>{{ student_item.role }}</p>
   <p>{{ student_item.topic }}</p>
-  <p>{{ student_item.result }}</p>
+  <p>{{ student_item.result | markdownify }}</p>
 </div>
 {% endfor %}
 ---
