@@ -10,7 +10,7 @@ classes:
   - name: MB588 – Microbiome Analysis
     role: "Teaching Assistant (TA), *Lecturer: Dr. C. Hawkes*"
     recitation: "Recitation Lectures: Large Language Models and Coding; Measurement Bias in Marker Gene Sequencing"
-    contributions_title: "Teaching Contributions"
+    contributions_title: "Teaching Contributions:"
     done:
       - Reviewed assignments and final projects.
       - Mentored graduate students without computational backgrounds in applying bioinformatics pipelines and interpreting microbiome analysis results.
@@ -21,7 +21,7 @@ classes:
   <h3>{{ class_entry.name }}</h3>
   {{ class_entry.role | markdownify }}
   <p>{{ class_entry.recitation }}</p>
-  <h4>{{ class_entry.contributions_title }}</h4>
+  <h5>{{ class_entry.contributions_title }}</h5>
   <ul>
     {% for teaching_item in class_entry.done %}
     <li>{{ teaching_item }}</li>
