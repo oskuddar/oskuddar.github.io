@@ -7,44 +7,44 @@ cv:
   summary: ds
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: oskuddar
     - network: LinkedIn
-      username: example
+      username: ozgekuddar
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    street: ""
+    city: ""
+    region: North Carolina
+    postalCode: ""
+    countryCode: USA
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: North Carolina State University
+        location: Raleigh, NC, USA
+        url: https://www.ncsu.edu/
+        area: Bioinformatics
+        studyType: Ph.D.
+        start_date: 2021
+        end_date: 2026
         score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+        courses: "<u>Thesis:</u> Validating DNA metabarcoding for characterization of pollen from surface soils"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: Technische Hochschule Mannheim
+        location: Mannheim, DE
+        area: Bioinformatics
+        studyType: M.Sc.
+        start_date: ""
+        end_date: ""
+        courses: "<u>Thesis:</u> Evaluation of the use of <i>VlmybA1-2</i> gene as a visible transformation marker in the pCLEAN co-transformation system"
+      
+      - institution: Ege University
+        location: Izmir, TR
+        area: Bioengineering
+        studyType: B.Eng.
+        start_date: ""
+        end_date: ""
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
