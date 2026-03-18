@@ -105,7 +105,7 @@ cv:
     Skills:
       - name: Bioinformatics
         icon: fa-solid fa-hashtag
-        keywords: "Statistical modeling, probabilistic modeling, Bayesian inference, microbiome data analysis, measurement bias, differential abundance analysis, DNA metabarcoding, amplicon sequencing, metagenomics, high-throughput sequencing (HTS, NGS), compositional data analysis, ecological community analysis, bioinformatics pipeline development, large-scale data analysis, high-dimensional data analysis, data integration, reproducible research, algorithm development, data visualization, taxonomic classification, reference database curation, high-performance computing, cloud computing (AWS), Linux/Unix, Python, R, Bash, Git"
+        keywords: "Statistical modeling, probabilistic modeling, Bayesian inference, microbiome data analysis, measurement bias, differential abundance analysis, DNA metabarcoding, amplicon sequencing, metagenomics, high-throughput sequencing (HTS, NGS), compositional data analysis, ecological community analysis, bioinformatics pipeline development, large-scale data analysis, high-dimensional data analysis, data integration, reproducible research, algorithm development, data visualization, taxonomic classification, reference database curation, high-performance computing, cloud computing (AWS), Linux/Unix, Python, R, Bash, Git, Benchling (Manager of CRISPR/Cas9 group)"
 
     Languages:
       - name: Turkish
