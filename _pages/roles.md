@@ -9,7 +9,7 @@ nav_order: 3
 
 classes:
   - name: "MB588 – Microbiome Analysis, <i>Lecturer: Dr. C. Hawkes</i>"
-    role: "Teaching Assistant (TA)"
+    role: "Teaching Assistant (TA), Fall.2025"
     recitation: "<u>Recitation Lectures</u>: Large Language Models (LLM) and Coding; Measurement Bias in Marker Gene Sequencing"
     contributions_title: "Teaching Contributions:"
     done:
