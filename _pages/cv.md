@@ -1,12 +1,8 @@
 ---
-layout: cv
+layout: redirect
 permalink: /cv/
 title: CV
 nav: true
 nav_order: 6
-cv_pdf: /assets/pdf/CV_OSK_github.pdf # you can also use external links here
-description: Please click the PDF icon to see the CV.
-cv_format:  # options: rendercv, jsonresume
-toc:
-  sidebar: false
+redirect_to: /assets/pdf/CV_OSK_github.pdf
 ---
