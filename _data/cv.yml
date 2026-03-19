@@ -26,7 +26,7 @@ cv:
         start_date: 2021
         end_date: 2026
         score: ""
-        order=1
+        order:1
         courses: "<u>Thesis:</u> Evaluation of DNA metabarcoding for characterization of pollen in surface soil samples with potential forensic applications"
 
       - institution: Technische Hochschule Mannheim
