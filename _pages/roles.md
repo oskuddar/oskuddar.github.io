@@ -5,7 +5,7 @@ title: roles
 show_title: false
 description:
 nav: true
-nav_order: 3
+nav_order: 2
 
 classes:
   - name: "MB588 – Microbiome Analysis, <i>Lecturer: Dr. C. Hawkes</i>"
