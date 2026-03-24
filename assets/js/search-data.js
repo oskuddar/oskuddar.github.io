@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/roles/";
           },
+        },{id: "nav-github",
+          title: "GitHub",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "nav-writing",
           title: "writing",
           description: "",
@@ -29,13 +36,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/_pages/cv/";
-          },
-        },{id: "nav-github",
-          title: "GitHub",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
