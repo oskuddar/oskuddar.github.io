@@ -121,7 +121,7 @@ pagination:
     {% assign categories = post.categories | join: "" %}
 
     <li>
-      <div class="card hoverable">
+      <div class="card hoverable p-3">
 
 {% if post.thumbnail %}
 
