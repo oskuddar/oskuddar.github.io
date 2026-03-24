@@ -33,8 +33,7 @@
   }
 }
 
-.post-list h3 a.post-title {
-  color: #ff0000 !important;
+.post-list {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
@@ -67,6 +66,14 @@
     a {
       color: var(--global-text-color);
       text-decoration: none;
+
+      &.post-title {
+        color: #ff0000;
+
+        &:hover {
+          color: #ff0000;
+        }
+      }
 
       &:hover {
         color: var(--global-theme-color);
