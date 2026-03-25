@@ -19,9 +19,9 @@ function determineGiscusTheme() {
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
     "data-repo": "oskuddar/oskuddar.github.io",
-    "data-repo-id": "",
-    "data-category": "Comments",
-    "data-category-id": "",
+    "data-repo-id": "R_kgDORnyofA",
+    "data-category": "Ideas",
+    "data-category-id": "DIC_kwDORnyofM4C5NdY",
     "data-mapping": "title",
     "data-strict": "1",
     "data-reactions-enabled": "1",
