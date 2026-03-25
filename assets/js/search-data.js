@@ -37,9 +37,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/_pages/cv/";
           },
-        },{id: "post-the-aim",
+        },{id: "post-the-beginning-of-quot-excellent-quot-scientific-writing",
         
-          title: "The Aim",
+          title: "The Beginning of &quot;Excellent&quot; Scientific Writing",
         
         description: "",
         section: "Posts",
