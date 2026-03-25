@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/_pages/cv/";
           },
-        },{id: "news-i-started-my-ph-d-in-bioinformatics-at-callahan-lab-at-north-carolina-state-university",
+        },{id: "post-the-start-of-becoming-a-better-scientific-writer",
+        
+          title: "The Start of Becoming a Better Scientific Writer",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thestart/";
+          
+        },
+      },{id: "news-i-started-my-ph-d-in-bioinformatics-at-callahan-lab-at-north-carolina-state-university",
           title: 'I started my Ph.D. in Bioinformatics at Callahan Lab at North Carolina State...',
           description: "",
           section: "News",},{id: "news-i-presented-my-poster-titled-trnl-database-generation-and-curation-at-the-genomic-sciences-graduate-student-association-ncsu",
