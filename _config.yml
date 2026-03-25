@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Ozge Shera Kuddar # the website title (if blank, full name will be used instead)
 first_name: Özge
 middle_name: SheRA
 last_name: Kuddar
@@ -10,10 +10,10 @@ google_scholar_id: 1-wpavIAAAAJ
 contact_note: >
   *Feel free to reach me out*
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Bioinformatics PhD researcher specializing in probabilistic modeling (Bayesian inference), microbiome, gut-brain axis and measurement bias.
 footer_text: >
   <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: microbiome, bias, bayesian, gut-brain-axis # add your own keywords or leave empty
+keywords: microbiome, bias, bayesian, gut-brain-axis, ozge kuddar # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 👾 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
