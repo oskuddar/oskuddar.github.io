@@ -35,4 +35,11 @@ Previously, I earned my **M.Sc. in Biotechnology** from [Technische Hochschule M
 I earned my **B.Eng. in Bioengineering** from [Ege University](https://biyomuhendislik.ege.edu.tr/eng-/Homepage.html), Turkiye. There, I worked on developing a secondary metabolite elimination medium for the *in vitro* cultivation of the mastic tree in Aynur Gurel`s Plant Lab.
 <br><br>
 
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ozge Shera Kuddar",
+  "url": "https://oskuddar.github.io"
+}
+</script>
