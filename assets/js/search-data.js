@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/_pages/cv/";
           },
-        },{id: "post-the-start-of-becoming-a-better-scientific-writer",
+        },{id: "post-wait-a-sec-maybe-i-had-a-different-style-of-writing",
+        
+          title: "Wait a sec... Maybe I had a different style of writing",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thesecond/";
+          
+        },
+      },{id: "post-the-start-of-becoming-a-better-scientific-writer",
         
           title: "The Start of Becoming a Better Scientific Writer",
         
