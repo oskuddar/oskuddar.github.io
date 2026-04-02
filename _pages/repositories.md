@@ -22,8 +22,8 @@ nav_order: 3
   }
 
   .repo-circle-shape {
-    width: 110px;
-    height: 110px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: flex;
     align-items: center;
