@@ -67,7 +67,7 @@ nav_order: 3
 <div class="repo-circle-wrapper">
   <a class="repo-circle-link" href="https://github.com/oskuddar/trnL_DB" target="_blank" rel="noopener noreferrer">
     <div class="repo-circle-shape repo-trnl">
-      <i>trnL</i> Database
+      <i>trnL</i>  Database
     </div>
   </a>
 
