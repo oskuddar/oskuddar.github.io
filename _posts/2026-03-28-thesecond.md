@@ -8,7 +8,6 @@ categories:
 giscus_comments: true
 ---
 
-
 Kurt Vonnegut-Timequake described two kinds of writer:
 1. Swoopers write a story quickly then go over it again painstakingly, fixing every-thing that...doesn`t work: higgledy piggledy - in confusion or disorder., crinkum crankum -  full of twists, turns, or excessive, intricate details [Vonnegut 1997; Heard, 2016]
 2. Basher - go ne sentence at a time, getting it exactly right before they go on the next one. when they are done, they are done. [Vonnegut 1997; Heard, 2016]
