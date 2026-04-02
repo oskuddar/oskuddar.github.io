@@ -67,13 +67,13 @@ nav_order: 3
 <div class="repo-circle-wrapper">
   <a class="repo-circle-link" href="https://github.com/oskuddar/trnL_DB" target="_blank" rel="noopener noreferrer">
     <div class="repo-circle-shape repo-trnl">
-      trnL_DB
+      <i>trnL</i> Database
     </div>
   </a>
 
   <a class="repo-circle-link" href="https://github.com/oskuddar/DNA_metabarcoding" target="_blank" rel="noopener noreferrer">
     <div class="repo-circle-shape repo-dna">
-      DNA_metabarcoding
+      DNA metabarcoding
     </div>
   </a>
 </div>
