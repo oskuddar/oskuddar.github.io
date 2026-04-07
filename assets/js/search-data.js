@@ -89,7 +89,7 @@ ninja.data = [{
           title: 'I presented a 20 min talk titled “From Measured Bias to Differential Abundance...',
           description: "",
           section: "News",},{id: "news-we-submitted-a-research-article-titled-generating-curating-and-evaluating-trnl-reference-sequence-databases-benchmarking-obitools3-ecopcr-rescript-and-metacurator-to-molecular-ecology-resources",
-          title: 'We submitted a research article titled Generating, curating, and evaluating trnL reference sequence...',
+          title: 'We submitted a research article titled: Generating, curating, and evaluating trnL reference sequence...',
           description: "",
           section: "News",},{id: "news-congratulations-to-the-team-on-our-paper-published-in-journal-of-clinical-investigation",
           title: 'Congratulations to the team on our paper published in Journal of Clinical Investigation....',
