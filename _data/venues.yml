@@ -9,3 +9,7 @@
 "CHOM":
   url: https://www.cell.com/cell-host-microbe/home
   color: "#009f36"
+
+"bioRxiv":
+  url: https://www.biorxiv.org/
+  color: "#6A5ACD"
