@@ -30,4 +30,4 @@ I am currently a **Bioinformatics Ph.D. candidate** at North Carolina State Univ
 
 My research interests span `probabilistic modeling (Bayesian inference)`, `microbiome`, `gut-brain axis` and `measurement bias`.
 
-Previously, I earned my **M.Sc. in Biotechnology** from [Technische Hochschule Mannheim](https://www.hs-mannheim.de/), Germany & my **B.Eng. in Bioengineering** from [Ege University](https://biyomuhendislik.ege.edu.tr/eng-/Homepage.html), Turkiye. 
+Previously, I earned **M.Sc. in Biotechnology** from [Technische Hochschule Mannheim](https://www.hs-mannheim.de/), Germany & **B.Eng. in Bioengineering** from [Ege University](https://biyomuhendislik.ege.edu.tr/eng-/Homepage.html), Turkiye. 
