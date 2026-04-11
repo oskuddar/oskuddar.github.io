@@ -97,6 +97,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-successfully-defended-my-dissertation-titled-evaluation-of-dna-metabarcoding-for-characterization-of-pollen-in-surface-soil-samples-with-potential-forensic-applications",
           title: 'I successfully defended my dissertation titled “Evaluation of DNA metabarcoding for characterization of...',
           description: "",
+          section: "News",},{id: "news-we-published-a-preprint-titled-generating-curating-and-evaluating-trnl-reference-sequence-databases-benchmarking-obitools3-ecopcr-rescript-and-metacurator-on-biorxiv",
+          title: 'We published a preprint titled Generating, curating, and evaluating trnL reference sequence databases:...',
+          description: "",
           section: "News",},{
         id: 'social-linkedin',
         title: 'LinkedIn',
