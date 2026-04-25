@@ -21,6 +21,13 @@ students:
     role: Bioinformatics Ph.D. student
     topic: "<u>Academic mentorship:</u> Provided guidance on navigating Ph.D. program requirements, research direction, and career development."
     result: "<u>Outcome:</u> Rasaq joined the Callahan Lab as a Ph.D. student."
+
+tsa:
+  - name: President of Turkish Student Association at NCSU (2024 - 2025)
+    done:
+      - Revitalized a declining organization by restoring communication and reactivating member engagement
+    result: "<u>Outcome:</u> The organization remains active and growing, with continued advisory support." 
+
 ---
 
 <h3><strong>Teaching</strong></h3>
@@ -49,5 +56,19 @@ students:
   <p>{{ student_item.role }}</p>
   <p>{{ student_item.topic }}</p>
   <p>{{ student_item.result }}</p>
+</div>
+{% endfor %}
+
+<br>
+
+<h3><strong>Leadership</strong></h3>
+
+{% for tsa_item in page.tsa %}
+<div class="card mt-3 p-3">
+  <h3>{{ tsa_item.name }}</h3>
+  {% for item in tsa_item.done %}
+    <p>{{ item }}</p>
+  {% endfor %}
+  <p>{{ tsa_item.result }}</p>
 </div>
 {% endfor %}
