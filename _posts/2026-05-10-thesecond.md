@@ -8,13 +8,13 @@ categories:
 giscus_comments: true
 ---
 
-<b>Aim: Build pomodoro app on Macbook menubar</b>
+<b>Aim:</b> Build pomodoro app on Macbook menubar
 
-<b>Features: Adjustable and continuous 30, 45, 60 min study time - 5, 10, 25 min break time with notification sound</b>
+<b>Features:</b> Adjustable and continuous 30, 45, 60 min study time - 5, 10, 25 min break time with notification sound
 
 <img src="/assets/img/pomodoro.png" width="800">
 
-Requirements: Swiftbar app
+<b>Requirements:</b> Swiftbar app
 
 `brew install swiftbar`
 
@@ -24,7 +24,7 @@ Requirements: Swiftbar app
 
 <b>Python Code:</b>
 
-<i>Change the path to your python location by using:</i>
+<i>Change the path to your Python location using:</i>
 `which python3`
 
 
