@@ -37,18 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/_pages/cv/";
           },
-        },{id: "post-wait-a-sec-maybe-i-had-a-different-style-of-writing",
-        
-          title: "Wait a sec... Maybe I had a different style of writing",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/thesecond/";
-          
-        },
-      },{id: "post-scrna-qc-short-vs-long-read-sequencing",
+        },{id: "post-scrna-qc-short-vs-long-read-sequencing",
         
           title: "scRNA.QC - short vs long read sequencing",
         
@@ -56,7 +45,18 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/thestart/";
+            window.location.href = "/blog/2026/scrna/";
+          
+        },
+      },{id: "post-pomodoro-app",
+        
+          title: "Pomodoro App",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thesecond/";
           
         },
       },{id: "news-i-started-my-ph-d-in-bioinformatics-at-callahan-lab-at-north-carolina-state-university",
