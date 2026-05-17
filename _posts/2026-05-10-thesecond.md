@@ -8,19 +8,19 @@ categories:
 giscus_comments: true
 ---
 
-Aim: Build pomodoro app on Macbook menubar
+<b>Aim: Build pomodoro app on Macbook menubar</b>
 
-Features: Adjustable and continuous 30, 45, 60 min study time - 5, 10, 25 min break time with notification sound
+<b>Features: Adjustable and continuous 30, 45, 60 min study time - 5, 10, 25 min break time with notification sound</b>
 
-<img src="/assets/img/pomodoro.png" width="500">
+<img src="/assets/img/pomodoro.png" width="800">
 
 Requirements: Swiftbar app
 
-'brew install swiftbar'
+`brew install swiftbar`
 
-'mkdir -p ~/SwiftBarPlugins'
+`mkdir -p ~/SwiftBarPlugins`
 
-'nano ~/SwiftBarPlugins/pomodoro.1s.py'
+`nano ~/SwiftBarPlugins/pomodoro.1s.py`
 
 <b>Python Code:</b>
 
@@ -169,8 +169,8 @@ if len(sys.argv) > 1:
 print_menu()
 ```
 
-Bash: 
+Then run this code on Bash: 
 
 `chmod +x ~/SwiftBarPlugins/pomodoro.1s.py`
 
-
+Finally, open the SwiftBar app. You will see SwiftBar appear in your MacBook menu bar. Click “Refresh All,” and the label will change to “Pomodoro {Time}”.
