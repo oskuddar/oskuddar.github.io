@@ -48,9 +48,9 @@ ninja.data = [{
             window.location.href = "/blog/2026/thesecond/";
           
         },
-      },{id: "post-the-start-of-becoming-a-better-scientific-writer",
+      },{id: "post-scrna-qc-short-vs-long-read-sequencing",
         
-          title: "The Start of Becoming a Better Scientific Writer",
+          title: "scRNA.QC - short vs long read sequencing",
         
         description: "",
         section: "Posts",
