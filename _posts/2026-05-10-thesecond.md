@@ -10,3 +10,167 @@ giscus_comments: true
 
 Aim: Build pomodoro app on Macbook menubar
 
+Features: Adjustable and continuous 30, 45, 60 min study time - 5, 10, 25 min break time with notification sound
+
+<img src="/assets/img/pomodoro.png" width="500">
+
+Requirements: Swiftbar app
+
+'brew install swiftbar'
+
+'mkdir -p ~/SwiftBarPlugins'
+
+'nano ~/SwiftBarPlugins/pomodoro.1s.py'
+
+<b>Python Code:</b>
+
+<i>Change the path to your python location by using:</i>
+`which python3`
+
+
+```
+#!/path/bin/python3
+
+import json
+import os
+import subprocess
+import sys
+import time
+
+state_file_path = os.path.expanduser("~/.pomodoro_state.json")
+
+default_timer_state = {
+    "running": False,
+    "mode": "Focus",
+    "focus_minutes": 30,
+    "break_minutes": 5,
+    "end_time": 0
+}
+
+def load_timer_state():
+    if not os.path.exists(state_file_path):
+        return default_timer_state.copy()
+
+    try:
+        with open(state_file_path, "r") as state_file:
+            saved_timer_state = json.load(state_file)
+        return {**default_timer_state, **saved_timer_state}
+    except Exception:
+        return default_timer_state.copy()
+
+def save_timer_state(timer_state):
+    with open(state_file_path, "w") as state_file:
+        json.dump(timer_state, state_file)
+
+def send_notification(notification_title, notification_message):
+    subprocess.run([
+        "osascript",
+        "-e",
+        f'display notification "{notification_message}" with title "{notification_title}"'
+    ])
+
+    subprocess.run([
+        "afplay",
+        "/System/Library/Sounds/Glass.aiff"
+    ])
+
+def start_timer():
+    timer_state = load_timer_state()
+    selected_minutes = timer_state["focus_minutes"] if timer_state["mode"] == "Focus" else timer_state["break_minutes"]
+    timer_state["running"] = True
+    timer_state["end_time"] = int(time.time()) + selected_minutes * 60
+    save_timer_state(timer_state)
+
+def stop_timer():
+    timer_state = load_timer_state()
+    timer_state["running"] = False
+    timer_state["mode"] = "Focus"
+    timer_state["end_time"] = 0
+    save_timer_state(timer_state)
+
+def set_focus_minutes(minutes_value):
+    timer_state = load_timer_state()
+    timer_state["focus_minutes"] = minutes_value
+    if not timer_state["running"] and timer_state["mode"] == "Focus":
+        timer_state["end_time"] = 0
+    save_timer_state(timer_state)
+
+def set_break_minutes(minutes_value):
+    timer_state = load_timer_state()
+    timer_state["break_minutes"] = minutes_value
+    if not timer_state["running"] and timer_state["mode"] == "Break":
+        timer_state["end_time"] = 0
+    save_timer_state(timer_state)
+
+def switch_session_if_finished(timer_state):
+    if timer_state["running"] and int(time.time()) >= timer_state["end_time"]:
+        if timer_state["mode"] == "Focus":
+            timer_state["mode"] = "Break"
+            timer_state["end_time"] = int(time.time()) + timer_state["break_minutes"] * 60
+            send_notification("Pomodoro", "Focus finished. Take a break.")
+        else:
+            timer_state["mode"] = "Focus"
+            timer_state["end_time"] = int(time.time()) + timer_state["focus_minutes"] * 60
+            send_notification("Pomodoro", "Break finished. Start focusing.")
+        save_timer_state(timer_state)
+    return timer_state
+
+def format_remaining_time(seconds_remaining):
+    bounded_seconds = max(0, seconds_remaining)
+    minutes_display = bounded_seconds // 60
+    seconds_display = bounded_seconds % 60
+    return f"{minutes_display:02}:{seconds_display:02}"
+
+def print_menu():
+    timer_state = switch_session_if_finished(load_timer_state())
+
+    if timer_state["running"]:
+        remaining_seconds = timer_state["end_time"] - int(time.time())
+        print(f"{timer_state['mode']} {format_remaining_time(remaining_seconds)}")
+    else:
+        print(f"Pomodoro {timer_state['focus_minutes']}:00")
+
+    print("---")
+
+    if timer_state["running"]:
+        print(f"Stop | bash='{sys.executable}' param1='{__file__}' param2='stop' terminal=false refresh=true")
+    else:
+        print(f"Start | bash='{sys.executable}' param1='{__file__}' param2='start' terminal=false refresh=true")
+
+    print("---")
+    print("Focus duration")
+    for focus_option in [30, 45, 60]:
+        selected_marker = "✓ " if timer_state["focus_minutes"] == focus_option else ""
+        print(f"{selected_marker}{focus_option} min | bash='{sys.executable}' param1='{__file__}' param2='focus' param3='{focus_option}' terminal=false refresh=true")
+
+    print("---")
+    print("Break duration")
+    for break_option in [5, 10, 25]:
+        selected_marker = "✓ " if timer_state["break_minutes"] == break_option else ""
+        print(f"{selected_marker}{break_option} min | bash='{sys.executable}' param1='{__file__}' param2='break' param3='{break_option}' terminal=false refresh=true")
+
+    print("---")
+    print("Reset | bash='{sys.executable}' param1='{__file__}' param2='stop' terminal=false refresh=true")
+
+if len(sys.argv) > 1:
+    command_name = sys.argv[1]
+
+    if command_name == "start":
+        start_timer()
+    elif command_name == "stop":
+        stop_timer()
+    elif command_name == "focus":
+        set_focus_minutes(int(sys.argv[2]))
+    elif command_name == "break":
+        set_break_minutes(int(sys.argv[2]))
+
+    sys.exit(0)
+
+print_menu()
+```
+
+Bash: 
+
+`chmod +x ~/SwiftBarPlugins/pomodoro.1s.py`
+
+
