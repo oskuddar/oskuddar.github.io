@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "post-scrna-qc-short-vs-long-read-sequencing",
         
-          title: "scRNA.QC - short vs long read sequencing",
+          title: "scRNA QC - Short vs Long Read Sequencing",
         
         description: "",
         section: "Posts",
