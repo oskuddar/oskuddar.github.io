@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://oskuddar.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://oskuddar.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-05-21T19:22:43+00:00</updated><id>https://oskuddar.github.io/feed.xml</id><title type="html">blank</title><subtitle>What is the story? </subtitle><entry><title type="html">scRNA QC - Short vs Long Read Sequencing</title><link href="https://oskuddar.github.io/blog/2026/scrna/" rel="alternate" type="text/html" title="scRNA QC - Short vs Long Read Sequencing"/><published>2026-05-15T18:30:00+00:00</published><updated>2026-05-15T18:30:00+00:00</updated><id>https://oskuddar.github.io/blog/2026/scrna</id><content type="html" xml:base="https://oskuddar.github.io/blog/2026/scrna/"><![CDATA[<p><b><u>Project:</u> Compare Sequencing Platforms in Terms of Immune Repertoire Analysis</b></p> <p><b><u>Sequencing Platforms:</u> Illumina NextSeq short read vs PacBio+Kinnex long read</b></p> <p><b><u>Assumptions:</u></b></p> <p>Matched sample pairs were analyzed using short-read and long-read single-cell sequencing workflows generated from the same 10x Genomics cDNA libraries (verify the fluorescence intensity and molarity distribution with Bioanalyser). Sequencing libraries passed standard quality control metrics (e.g., PacBio, Table2 [<a href="#ref1">1</a>]; Illumina, Table3 [<a href="#ref2">2</a>]) and comparable analytical tools and workflows were applied for both datasets.</p> <blockquote> <p>Evaluation of immune receptor recovery across cell types [<a href="#ref3">3</a>]</p> </blockquote> <ul> <li> <p>Compare immune cell-type detection between sequencing methods by assessing whether specific populations (e.g., γδ T-cells) are differentially recovered. (<i>PacBio/Kinnex passes if it recovers the same major immune populations without systematic loss of rare cell populations.</i>)</p> </li> <li> <p>Assess full-length paired-chain recovery within detected B-cell (e.g., H/L chains) and T-cell populations (e.g., α/β chains) across clonotypes to evaluate immune receptor reconstruction. (<i>PacBio/Kinnex passes if it achieves higher full-length paired-chain recovery across individual single-cell barcodes.</i>)</p> </li> </ul> <blockquote> <p>Evaluation of platform-dependent differences in recombination profiles and clonal architecture [<a href="#ref4">4</a>]</p> </blockquote> <ul> <li> <p>Comparison of V(D)J gene usage and recombination patterns across both BCR and TCR chains, including IGHV vs IGHD, IGHV vs IGHJ, IGKV vs IGKJ, and TRAV vs TRAJ gene combinations. Clonal architecture can also be evaluated using diversity metrics (e.g., Shannon diversity) for each immunoglobulin and T cell receptor chain. (<i>PacBio/Kinnex passes if it yields a denser V(D)J matrix with higher read-count abundance and fewer dropouts (e.g., visualization with heatmap), and if it yields overall higher diversity.</i>)</p> </li> <li> <p>Method-specific and shared recombination patterns can also be summarized. CDR3 structure comparisons can include complete CDR3 recovery rate, CDR3 length distribution and CDR3 motif structure analysis between sequencing methods.(<i>PacBio/Kinnex passes if it shows high proportion of CDR3 recovery rate, unbiased CDR3 length distribution (need more detailed inspection for actual CDR3 length), comparable CDR3 motifs while also capturing hidden sequence variants.</i>)</p> </li> </ul> <p><b>References:</b></p> <p id="ref1">[1] PacBio. (2023). Kinnex single-cell RNA kit for single-cell isoform sequencing [Application note]. [PacBio](https://www.pacb.com/wp-content/uploads/Application-note-Kinnex-single-cell-RNA-kit-for-single-cell-isoform-sequencing.pdf)</p> <p id="ref2">[2] ChromiumTM Single Cell 3’ v2 Libraries -Sequencing Performance on Illumina® NextSeq® 500 Flow Cells. (n.d.). Retrieved from https://assets.ctfassets.net/an68im79xiti/4p3SmrSj1mYMiyyOewQyAW/d98c236816b15cf247990f47a4ae3ac4/CG000085_Technical_Note_Sequencing_Metrics_for_NextSeq_500.pdf)</p> <p id="ref3">[3] A comparison of long-read single-cell transcriptomic approaches Scoones, A. L. A., Lan, Y., Utting, C., Pouncey, L., Lister, A., Kudasheva, S., Mehta, N., Irish, N., Swarbreck, D., Gharbi, K., Haerty, W., Cribbs, A. P., Wright, D. J., &amp; Macaulay, I. C. (2025). A comparison of long-read single-cell transcriptomic approaches. [https://doi.org/10.1101/2025.07.03.662955](https://doi.org/10.1101/2025.07.03.662955)</p> <p id="ref4">[4] Systematic evaluation of long- and short-read RNA-seq for human peripheral blood Iwabuchi, S., Nasti, A., Okada, H., Takeshita, Y., Sato, T.-A., Urabe, T., Takamura, T., Tamura, T., Tajima, A., Matsubara, K., &amp; Kaneko, S. (2026). Systematic evaluation of long- and short-read RNA-seq for human peripheral blood. NAR Molecular Medicine, 3(1). [https://doi.org/10.1093/narmme/ugag006](https://doi.org/10.1093/narmme/ugag006)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Project: Compare Sequencing Platforms in Terms of Immune Repertoire Analysis]]></summary></entry><entry><title type="html">Pomodoro App</title><link href="https://oskuddar.github.io/blog/2026/pomodoro/" rel="alternate" type="text/html" title="Pomodoro App"/><published>2026-05-10T18:30:00+00:00</published><updated>2026-05-10T18:30:00+00:00</updated><id>https://oskuddar.github.io/blog/2026/pomodoro</id><content type="html" xml:base="https://oskuddar.github.io/blog/2026/pomodoro/"><![CDATA[<p><b>Aim:</b> Build pomodoro app on Macbook menubar</p> <p><img src="/assets/img/pomodoro.png" width="800"/></p> <p><b>Features:</b> Adjustable and continuous 30, 45, 60 min study time - 5, 10, 25 min break time with notification sound.</p> <p><b>Requirements:</b> Install SwiftBar app</p> <p><code class="language-plaintext highlighter-rouge">brew install swiftbar</code></p> <p><code class="language-plaintext highlighter-rouge">mkdir -p ~/SwiftBarPlugins</code></p> <p><b>Create python script:</b></p> <p><code class="language-plaintext highlighter-rouge">nano ~/SwiftBarPlugins/pomodoro.1s.py</code></p> <p><b>Paste this Python Code into pomodoro.1s.py:</b></p> <p><i>Change the path to your Python location using:</i> <code class="language-plaintext highlighter-rouge">which python3</code></p> <div style="max-height: 220px; overflow-y: auto;"> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#!/path.../bin/python3 #Change Me
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://oskuddar.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://oskuddar.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-05-21T21:07:04+00:00</updated><id>https://oskuddar.github.io/feed.xml</id><title type="html">blank</title><subtitle>What is the story? </subtitle><entry><title type="html">scRNA QC - Short vs Long Read Sequencing</title><link href="https://oskuddar.github.io/blog/2026/scrna/" rel="alternate" type="text/html" title="scRNA QC - Short vs Long Read Sequencing"/><published>2026-05-15T18:30:00+00:00</published><updated>2026-05-15T18:30:00+00:00</updated><id>https://oskuddar.github.io/blog/2026/scrna</id><content type="html" xml:base="https://oskuddar.github.io/blog/2026/scrna/"><![CDATA[<p><b><u>Project:</u> Compare Sequencing Platforms in Terms of Immune Repertoire Analysis</b></p> <p><b><u>Sequencing Platforms:</u> Illumina NextSeq short read vs PacBio+Kinnex long read</b></p> <p><b><u>Assumptions:</u></b></p> <p>Matched sample pairs were analyzed using short-read and long-read single-cell sequencing workflows generated from the same 10x Genomics cDNA libraries (verify the fluorescence intensity and molarity distribution with Bioanalyser). Sequencing libraries passed standard quality control metrics (e.g., PacBio, Table2 [<a href="#ref1">1</a>]; Illumina, Table3 [<a href="#ref2">2</a>]) and comparable analytical tools and workflows were applied for both datasets.</p> <blockquote> <p>Evaluation of immune receptor recovery across cell types [<a href="#ref3">3</a>]</p> </blockquote> <ul> <li> <p>Compare immune cell-type detection between sequencing methods by assessing whether specific populations (e.g., γδ T-cells) are differentially recovered. (<i>PacBio/Kinnex passes if it recovers the same major immune populations without systematic loss of rare cell populations.</i>)</p> </li> <li> <p>Assess full-length paired-chain recovery within detected B-cell (e.g., H/L chains) and T-cell populations (e.g., α/β chains) across clonotypes to evaluate immune receptor reconstruction. (<i>PacBio/Kinnex passes if it achieves higher full-length paired-chain recovery across individual single-cell barcodes.</i>)</p> </li> </ul> <blockquote> <p>Evaluation of platform-dependent differences in recombination profiles and clonal architecture [<a href="#ref4">4</a>]</p> </blockquote> <ul> <li> <p>Comparison of V(D)J gene usage and recombination patterns across both BCR and TCR chains, including IGHV vs IGHD, IGHV vs IGHJ, IGKV vs IGKJ, and TRAV vs TRAJ gene combinations. Clonal architecture can also be evaluated using diversity metrics (e.g., Shannon diversity) for each immunoglobulin and T cell receptor chain. (<i>PacBio/Kinnex passes if it yields a denser V(D)J matrix with higher read-count abundance and fewer dropouts (e.g., visualization with heatmap), and if it yields overall higher diversity.</i>)</p> </li> <li> <p>Method-specific and shared recombination patterns can also be summarized. CDR3 structure comparisons can include complete CDR3 recovery rate, CDR3 length distribution and CDR3 motif structure analysis between sequencing methods.(<i>PacBio/Kinnex passes if it shows high proportion of CDR3 recovery rate, unbiased CDR3 length distribution (need more detailed inspection for actual CDR3 length), comparable CDR3 motifs while also capturing hidden sequence variants.</i>)</p> </li> </ul> <p><b>References:</b></p> <p id="ref1">[1] PacBio. (2023). Kinnex single-cell RNA kit for single-cell isoform sequencing [Application note]. [PacBio](https://www.pacb.com/wp-content/uploads/Application-note-Kinnex-single-cell-RNA-kit-for-single-cell-isoform-sequencing.pdf)</p> <p id="ref2">[2] ChromiumTM Single Cell 3’ v2 Libraries -Sequencing Performance on Illumina® NextSeq® 500 Flow Cells. (n.d.). Retrieved from https://assets.ctfassets.net/an68im79xiti/4p3SmrSj1mYMiyyOewQyAW/d98c236816b15cf247990f47a4ae3ac4/CG000085_Technical_Note_Sequencing_Metrics_for_NextSeq_500.pdf)</p> <p id="ref3">[3] A comparison of long-read single-cell transcriptomic approaches Scoones, A. L. A., Lan, Y., Utting, C., Pouncey, L., Lister, A., Kudasheva, S., Mehta, N., Irish, N., Swarbreck, D., Gharbi, K., Haerty, W., Cribbs, A. P., Wright, D. J., &amp; Macaulay, I. C. (2025). A comparison of long-read single-cell transcriptomic approaches. [https://doi.org/10.1101/2025.07.03.662955](https://doi.org/10.1101/2025.07.03.662955)</p> <p id="ref4">[4] Systematic evaluation of long- and short-read RNA-seq for human peripheral blood Iwabuchi, S., Nasti, A., Okada, H., Takeshita, Y., Sato, T.-A., Urabe, T., Takamura, T., Tamura, T., Tajima, A., Matsubara, K., &amp; Kaneko, S. (2026). Systematic evaluation of long- and short-read RNA-seq for human peripheral blood. NAR Molecular Medicine, 3(1). [https://doi.org/10.1093/narmme/ugag006](https://doi.org/10.1093/narmme/ugag006)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Project: Compare Sequencing Platforms in Terms of Immune Repertoire Analysis]]></summary></entry><entry><title type="html">Pomodoro App</title><link href="https://oskuddar.github.io/blog/2026/pomodoro/" rel="alternate" type="text/html" title="Pomodoro App"/><published>2026-05-10T18:30:00+00:00</published><updated>2026-05-10T18:30:00+00:00</updated><id>https://oskuddar.github.io/blog/2026/pomodoro</id><content type="html" xml:base="https://oskuddar.github.io/blog/2026/pomodoro/"><![CDATA[<p><b>Aim:</b> Build pomodoro app on Macbook menubar</p> <p><img src="/assets/img/pomodoro.png" width="800"/></p> <p><b>Features:</b> Adjustable and continuous 30, 45, 60 min study time - 5, 10, 25 min break time with notification sound.</p> <p><b>Requirements:</b> Install SwiftBar app</p> <p><code class="language-plaintext highlighter-rouge">brew install swiftbar</code></p> <p><code class="language-plaintext highlighter-rouge">mkdir -p ~/SwiftBarPlugins</code></p> <p><b>Create python script:</b></p> <p><code class="language-plaintext highlighter-rouge">nano ~/SwiftBarPlugins/pomodoro.1s.py</code></p> <p><b>Paste this Python Code into pomodoro.1s.py:</b></p> <p><i>Change the path to your Python location using:</i> <code class="language-plaintext highlighter-rouge">which python3</code></p> <div style="max-height: 220px; overflow-y: auto;"> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#!/path.../bin/python3 #Change Me
 </span>
 <span class="kn">import</span> <span class="n">json</span>
 <span class="kn">import</span> <span class="n">os</span>
@@ -135,4 +135,243 @@
 
     <span class="n">sys</span><span class="p">.</span><span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="nf">print_menu</span><span class="p">()</span></code></pre></figure> </div> <p><b>Then run this code on Bash:</b></p> <p><code class="language-plaintext highlighter-rouge">chmod +x ~/SwiftBarPlugins/pomodoro.1s.py</code></p> <p><b><i>Finally, open the SwiftBar app. You will see SwiftBar appear in your MacBook menu bar. Click “Refresh All,” and the label will change to “Pomodoro {Time}”.</i></b></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Aim: Build pomodoro app on Macbook menubar]]></summary></entry><entry><title type="html">GitHub Traffic Tracker (&amp;gt;14 days)</title><link href="https://oskuddar.github.io/blog/2026/github/" rel="alternate" type="text/html" title="GitHub Traffic Tracker (&amp;gt;14 days)"/><published>2026-05-05T18:30:00+00:00</published><updated>2026-05-05T18:30:00+00:00</updated><id>https://oskuddar.github.io/blog/2026/github</id><content type="html" xml:base="https://oskuddar.github.io/blog/2026/github/"><![CDATA[<p><b>Problem Statement:</b> GitHub provides access to only the past 14 days of repository traffic data. Existing solutions are not simple and are not designed for the specific output I want.</p> <p><b>Solution:</b> A simple algorithm can track daily and cumulative counts for total and unique repository views and clones.</p> <p>&lt; To be continued &gt;</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Problem Statement: GitHub provides access to only the past 14 days of repository traffic data. Existing solutions are not simple and are not designed for the specific output I want.]]></summary></entry></feed>
+<span class="nf">print_menu</span><span class="p">()</span></code></pre></figure> </div> <p><b>Then run this code on Bash:</b></p> <p><code class="language-plaintext highlighter-rouge">chmod +x ~/SwiftBarPlugins/pomodoro.1s.py</code></p> <p><b><i>Finally, open the SwiftBar app. You will see SwiftBar appear in your MacBook menu bar. Click “Refresh All,” and the label will change to “Pomodoro {Time}”.</i></b></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Aim: Build pomodoro app on Macbook menubar]]></summary></entry><entry><title type="html">GitHub Traffic Tracker (&amp;gt;14 days)</title><link href="https://oskuddar.github.io/blog/2026/github/" rel="alternate" type="text/html" title="GitHub Traffic Tracker (&amp;gt;14 days)"/><published>2026-05-05T18:30:00+00:00</published><updated>2026-05-05T18:30:00+00:00</updated><id>https://oskuddar.github.io/blog/2026/github</id><content type="html" xml:base="https://oskuddar.github.io/blog/2026/github/"><![CDATA[<p><b>Problem Statement:</b> GitHub provides access to only the past 14 days of repository traffic data. Existing solutions are not simple and are not designed for the specific output I want.</p> <p><b>Solution:</b> A simple algorithm can track daily and cumulative counts for total and unique repository views and clones.</p> <p><b>Note:</b> The traffic tracker tracks a single repo. For each repo you need to create a new tracker.</p> <p><b>How to do it:</b></p> <ol> <li>GitHub Personal Access Token (PAT):</li> </ol> <p>Go to Settings &gt; Developer Settings &gt; Tokens (classic). Create a token with the repo scope (Permission: Metadata and Administration - Read only)</p> <p>Save the Token ! We will use it.</p> <ol> <li>Google Service Account for JSON key:</li> </ol> <p>Go to the Google Cloud Console.</p> <p>Enable the Google Drive API (Click on the navigation menu on the top left corner -Hamburger icon-, then select API &amp; Services &gt; Enable API &amp; Services).</p> <p>Create a project, Name your project, Select the organization (I selected No organization)</p> <p>Now on the search bar (top menubar) search for “Google Drive API” and click on it. Then Enable the API.</p> <p>Click on the Hamburger icon again and select IAM &amp; Admin &gt; Service Accounts + Create Service Account</p> <p>Type “Service Account Name” which would be username for your email. + Create and continue</p> <p>Permissions: Basic &gt; Editor + Done</p> <p>Click on the hyperlink of the email you just created. Click on Keys on the top menu bar (Details, Permissions, Keys, …)</p> <p>Generate a JSON Key, and download it: Add key. Create a new Key. Key type: Json</p> <ol> <li>Google driver to create *.csv file:</li> </ol> <p>Open your Google Drive in your browser.</p> <p>Create or select the folder where you want the CSVs to live.</p> <p>Open the .json file you just downloaded and copy the “client_email” value (it looks like name@project-id.iam.gserviceaccount.com).</p> <p>Share the Google Drive folder with that email address, giving it Editor permissions.</p> <p>Create a csv file (e.g., traffic states.csv) and save the “1sdsN3bo-kX8dsdsrawMI” part in the hyperlink where we will use it in the “get_traffic.py” script. The link should look like something like this:</p> <p>https://docs.google.com/spreadsheets/d/1sdsN3bo-kX8dsdsrawMI/edit?gid=22392112#gid=22392112</p> <ol> <li>Back to your github account to create get_traffic.py and daily_traffic.yml:</li> </ol> <p>Click on the repo that you want to track the traffic.</p> <p>Create a file name “get_traffic.py” at main (not within a folder).</p> <p>Paste the python code with changes:</p> <p>a) The REPO line</p> <p>Change this to the actual path of your repository.</p> <p>Example: REPO = “JohnDoe/WeatherApp”</p> <p>b) The FILE_ID line</p> <p>Change this to the ID of the Google Drive csv file where you want the files saved (Explained on the at the end of the 3rd step)</p> <div style="max-height: 220px; overflow-y: auto;"> <figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="s">import os</span>
+<span class="s">import io</span>
+<span class="s">import requests</span>
+<span class="s">import pandas as pd</span>
+<span class="s">from google.oauth2 import service_account</span>
+<span class="s">from googleapiclient.discovery import build</span>
+<span class="s">from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload</span>
+
+<span class="c1"># Configuration</span>
+<span class="s">REPO = ""</span> <span class="c1">#CHANGE ME: e.g., "oskuddar/trnL_DB"</span>
+<span class="s">GITHUB_TOKEN = os.getenv("GH_TOKEN")</span>
+<span class="s">FILE_ID = ""</span> <span class="c1">#CHANGE ME: e.g., "1sdsN3bo-kX8dsdsrawMI"</span>
+
+<span class="s">OUTPUT_COLUMNS = [</span>
+    <span class="s">"date",</span>
+    <span class="s">"daily_total_views",</span>
+    <span class="s">"daily_unique_views",</span>
+    <span class="s">"daily_total_clones",</span>
+    <span class="s">"daily_unique_clones",</span>
+    <span class="s">"cumulative_total_views",</span>
+    <span class="s">"cumulative_unique_views",</span>
+    <span class="s">"cumulative_total_clones",</span>
+    <span class="s">"cumulative_unique_clones",</span>
+    <span class="s">"github_14d_total_views",</span>
+    <span class="s">"github_14d_unique_views",</span>
+    <span class="s">"github_14d_total_clones",</span>
+    <span class="s">"github_14d_unique_clones"</span>
+<span class="err">]</span>
+
+
+<span class="na">def get_github_traffic_daily_rows()</span><span class="pi">:</span>
+    <span class="s">github_headers = {</span>
+        <span class="s">"Authorization"</span><span class="err">:</span> <span class="s">f"token {GITHUB_TOKEN}",</span>
+        <span class="s">"Accept"</span><span class="err">:</span> <span class="s2">"</span><span class="s">application/vnd.github+json"</span>
+    <span class="err">}</span>
+
+    <span class="s">github_views_response = requests.get(</span>
+        <span class="s">f"https://api.github.com/repos/{REPO}/traffic/views",</span>
+        <span class="s">headers=github_headers,</span>
+        <span class="s">params={"per"</span><span class="err">:</span> <span class="s2">"</span><span class="s">day"</span><span class="err">},</span>
+        <span class="s">timeout=30</span>
+    <span class="s">)</span>
+    <span class="s">github_views_response.raise_for_status()</span>
+    <span class="s">github_views_payload = github_views_response.json()</span>
+
+    <span class="s">github_clones_response = requests.get(</span>
+        <span class="s">f"https://api.github.com/repos/{REPO}/traffic/clones",</span>
+        <span class="s">headers=github_headers,</span>
+        <span class="s">params={"per"</span><span class="err">:</span> <span class="s2">"</span><span class="s">day"</span><span class="err">},</span>
+        <span class="s">timeout=30</span>
+    <span class="s">)</span>
+    <span class="s">github_clones_response.raise_for_status()</span>
+    <span class="s">github_clones_payload = github_clones_response.json()</span>
+
+    <span class="s">daily_views_by_date = {</span>
+        <span class="s">traffic_view_entry["timestamp"][:10]: {</span>
+            <span class="s">"daily_total_views"</span><span class="err">:</span> <span class="s">traffic_view_entry.get("count", 0),</span>
+            <span class="s">"daily_unique_views"</span><span class="err">:</span> <span class="s">traffic_view_entry.get("uniques", 0)</span>
+        <span class="s">}</span>
+        <span class="s">for traffic_view_entry in github_views_payload.get("views", [])</span>
+    <span class="s">}</span>
+
+    <span class="s">daily_clones_by_date = {</span>
+        <span class="s">traffic_clone_entry["timestamp"][:10]: {</span>
+            <span class="s">"daily_total_clones"</span><span class="err">:</span> <span class="s">traffic_clone_entry.get("count", 0),</span>
+            <span class="s">"daily_unique_clones"</span><span class="err">:</span> <span class="s">traffic_clone_entry.get("uniques", 0)</span>
+        <span class="s">}</span>
+        <span class="s">for traffic_clone_entry in github_clones_payload.get("clones", [])</span>
+    <span class="s">}</span>
+
+    <span class="s">all_available_dates = sorted(set(daily_views_by_date) | set(daily_clones_by_date))</span>
+
+    <span class="s">github_daily_rows = []</span>
+    <span class="s">for traffic_date_value in all_available_dates</span><span class="err">:</span>
+        <span class="s">github_daily_rows.append({</span>
+            <span class="s">"date"</span><span class="err">:</span> <span class="s">traffic_date_value,</span>
+            <span class="s">"daily_total_views"</span><span class="err">:</span> <span class="s">daily_views_by_date.get(traffic_date_value, {}).get("daily_total_views", 0),</span>
+            <span class="s">"daily_unique_views"</span><span class="err">:</span> <span class="s">daily_views_by_date.get(traffic_date_value, {}).get("daily_unique_views", 0),</span>
+            <span class="s">"daily_total_clones"</span><span class="err">:</span> <span class="s">daily_clones_by_date.get(traffic_date_value, {}).get("daily_total_clones", 0),</span>
+            <span class="s">"daily_unique_clones"</span><span class="err">:</span> <span class="s">daily_clones_by_date.get(traffic_date_value, {}).get("daily_unique_clones", 0),</span>
+            <span class="s">"github_14d_total_views"</span><span class="err">:</span> <span class="s">github_views_payload.get("count", 0),</span>
+            <span class="s">"github_14d_unique_views"</span><span class="err">:</span> <span class="s">github_views_payload.get("uniques", 0),</span>
+            <span class="s">"github_14d_total_clones"</span><span class="err">:</span> <span class="s">github_clones_payload.get("count", 0),</span>
+            <span class="s">"github_14d_unique_clones"</span><span class="err">:</span> <span class="s">github_clones_payload.get("uniques", 0)</span>
+        <span class="s">})</span>
+
+    <span class="s">return pd.DataFrame(github_daily_rows)</span>
+
+
+<span class="na">def get_google_drive_service()</span><span class="pi">:</span>
+    <span class="s">with open("credentials.json", "w") as credential_output_handle</span><span class="err">:</span>
+        <span class="s">credential_output_handle.write(os.getenv("GDRIVE_JSON"))</span>
+
+    <span class="s">google_drive_credentials = service_account.Credentials.from_service_account_file("credentials.json")</span>
+    <span class="s">return build("drive", "v3", credentials=google_drive_credentials)</span>
+
+
+<span class="na">def download_existing_traffic_table(google_drive_service)</span><span class="pi">:</span>
+    <span class="s">export_request = google_drive_service.files().export_media(</span>
+        <span class="s">fileId=FILE_ID,</span>
+        <span class="s">mimeType="text/csv"</span>
+    <span class="s">)</span>
+
+    <span class="s">downloaded_csv_buffer = io.BytesIO()</span>
+    <span class="s">google_drive_downloader = MediaIoBaseDownload(downloaded_csv_buffer, export_request)</span>
+
+    <span class="s">download_finished = False</span>
+    <span class="s">while download_finished is False</span><span class="err">:</span>
+        <span class="s">download_status, download_finished = google_drive_downloader.next_chunk()</span>
+
+    <span class="s">downloaded_csv_buffer.seek(0)</span>
+
+    <span class="s">try</span><span class="err">:</span>
+        <span class="s">existing_traffic_table = pd.read_csv(downloaded_csv_buffer)</span>
+    <span class="s">except Exception</span><span class="err">:</span>
+        <span class="s">existing_traffic_table = pd.DataFrame(columns=OUTPUT_COLUMNS)</span>
+
+    <span class="s">return existing_traffic_table</span>
+
+
+<span class="na">def standardize_existing_traffic_table(existing_traffic_table)</span><span class="pi">:</span>
+    <span class="na">if existing_traffic_table.empty</span><span class="pi">:</span>
+        <span class="s">return pd.DataFrame(columns=OUTPUT_COLUMNS)</span>
+
+    <span class="s">legacy_column_map = {</span>
+        <span class="s">"total_views"</span><span class="err">:</span> <span class="s2">"</span><span class="s">github_14d_total_views"</span><span class="err">,</span>
+        <span class="s2">"</span><span class="s">unique_views"</span><span class="err">:</span> <span class="s2">"</span><span class="s">github_14d_unique_views"</span><span class="err">,</span>
+        <span class="s2">"</span><span class="s">total_clones"</span><span class="err">:</span> <span class="s2">"</span><span class="s">github_14d_total_clones"</span><span class="err">,</span>
+        <span class="s2">"</span><span class="s">unique_clones"</span><span class="err">:</span> <span class="s2">"</span><span class="s">github_14d_unique_clones"</span><span class="err">,</span>
+        <span class="s2">"</span><span class="s">daily_new_views"</span><span class="err">:</span> <span class="s2">"</span><span class="s">daily_total_views"</span><span class="err">,</span>
+        <span class="s2">"</span><span class="s">daily_new_clones"</span><span class="err">:</span> <span class="s2">"</span><span class="s">daily_total_clones"</span>
+    <span class="err">}</span>
+
+    <span class="s">standardized_traffic_table = existing_traffic_table.rename(columns=legacy_column_map).copy()</span>
+
+    <span class="na">for required_column_name in OUTPUT_COLUMNS</span><span class="pi">:</span>
+        <span class="na">if required_column_name not in standardized_traffic_table.columns</span><span class="pi">:</span>
+            <span class="s">standardized_traffic_table[required_column_name] = </span><span class="m">0</span>
+
+    <span class="s">standardized_traffic_table = standardized_traffic_table[OUTPUT_COLUMNS]</span>
+    <span class="s">standardized_traffic_table["date"] = pd.to_datetime(standardized_traffic_table["date"], errors="coerce").dt.strftime("%Y-%m-%d")</span>
+    <span class="s">standardized_traffic_table = standardized_traffic_table.dropna(subset=["date"])</span>
+
+    <span class="s">numeric_traffic_columns = [column_name for column_name in OUTPUT_COLUMNS if column_name != "date"]</span>
+    <span class="s">standardized_traffic_table[numeric_traffic_columns] = standardized_traffic_table[numeric_traffic_columns].apply(</span>
+        <span class="s">pd.to_numeric,</span>
+        <span class="s">errors="coerce"</span>
+    <span class="s">).fillna(0).astype(int)</span>
+
+    <span class="s">standardized_traffic_table = standardized_traffic_table.sort_values("date")</span>
+    <span class="s">standardized_traffic_table = standardized_traffic_table.drop_duplicates(subset=["date"], keep="last")</span>
+
+    <span class="s">return standardized_traffic_table</span>
+
+
+<span class="na">def update_cumulative_columns(traffic_history_table)</span><span class="pi">:</span>
+    <span class="s">sorted_traffic_history_table = traffic_history_table.sort_values("date").reset_index(drop=True).copy()</span>
+
+    <span class="s">daily_metric_columns = [</span>
+        <span class="s">"daily_total_views",</span>
+        <span class="s">"daily_unique_views",</span>
+        <span class="s">"daily_total_clones",</span>
+        <span class="s">"daily_unique_clones"</span>
+    <span class="s">]</span>
+
+    <span class="s">sorted_traffic_history_table[daily_metric_columns] = sorted_traffic_history_table[daily_metric_columns].apply(</span>
+        <span class="s">pd.to_numeric,</span>
+        <span class="s">errors="coerce"</span>
+    <span class="s">).fillna(0).astype(int)</span>
+
+    <span class="s">sorted_traffic_history_table["cumulative_total_views"] = sorted_traffic_history_table["daily_total_views"].cumsum()</span>
+    <span class="s">sorted_traffic_history_table["cumulative_unique_views"] = sorted_traffic_history_table["daily_unique_views"].cumsum()</span>
+    <span class="s">sorted_traffic_history_table["cumulative_total_clones"] = sorted_traffic_history_table["daily_total_clones"].cumsum()</span>
+    <span class="s">sorted_traffic_history_table["cumulative_unique_clones"] = sorted_traffic_history_table["daily_unique_clones"].cumsum()</span>
+
+    <span class="s">return sorted_traffic_history_table[OUTPUT_COLUMNS]</span>
+
+
+<span class="na">def update_drive_file()</span><span class="pi">:</span>
+    <span class="s">google_drive_service = get_google_drive_service()</span>
+
+    <span class="s">existing_traffic_table = download_existing_traffic_table(google_drive_service)</span>
+    <span class="s">standardized_traffic_table = standardize_existing_traffic_table(existing_traffic_table)</span>
+    <span class="s">github_daily_traffic_table = get_github_traffic_daily_rows()</span>
+
+    <span class="s">combined_traffic_table = pd.concat(</span>
+        <span class="s">[standardized_traffic_table, github_daily_traffic_table],</span>
+        <span class="s">ignore_index=True</span>
+    <span class="s">)</span>
+
+    <span class="s">combined_traffic_table["date"] = pd.to_datetime(combined_traffic_table["date"], errors="coerce").dt.strftime("%Y-%m-%d")</span>
+    <span class="s">combined_traffic_table = combined_traffic_table.dropna(subset=["date"])</span>
+    <span class="s">combined_traffic_table = combined_traffic_table.sort_values("date")</span>
+    <span class="s">combined_traffic_table = combined_traffic_table.drop_duplicates(subset=["date"], keep="last")</span>
+
+    <span class="s">updated_traffic_table = update_cumulative_columns(combined_traffic_table)</span>
+
+    <span class="s">local_csv_path = "temp_traffic.csv"</span>
+    <span class="s">updated_traffic_table.to_csv(local_csv_path, index=False)</span>
+
+    <span class="s">upload_media = MediaFileUpload(local_csv_path, mimetype="text/csv")</span>
+    <span class="s">google_drive_service.files().update(fileId=FILE_ID, media_body=upload_media).execute()</span>
+
+    <span class="s">latest_traffic_row = updated_traffic_table.iloc[-1]</span>
+    <span class="s">print(</span>
+        <span class="s">"Update complete. "</span>
+        <span class="s">f"Latest date</span><span class="err">:</span> <span class="pi">{</span><span class="nv">latest_traffic_row</span><span class="pi">[</span><span class="s1">'</span><span class="s">date'</span><span class="pi">]}</span><span class="s">. "</span>
+        <span class="s">f"Cumulative views</span><span class="err">:</span> <span class="pi">{</span><span class="nv">latest_traffic_row</span><span class="pi">[</span><span class="s1">'</span><span class="s">cumulative_total_views'</span><span class="pi">]}</span><span class="s">. "</span>
+        <span class="s">f"Cumulative clones</span><span class="err">:</span> <span class="pi">{</span><span class="nv">latest_traffic_row</span><span class="pi">[</span><span class="s1">'</span><span class="s">cumulative_total_clones'</span><span class="pi">]}</span><span class="s">."</span>
+    <span class="s">)</span>
+
+
+<span class="s">if __name__ == "__main__"</span><span class="err">:</span>
+    <span class="s">update_drive_file()</span></code></pre></figure> </div> <p>Create a folder name: .github/workflows</p> <p>Create a file under this folder: daily_traffic.yml</p> <p>Paste the following code to your daily_traffic.yml file:</p> <div style="max-height: 220px; overflow-y: auto;"> <figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="na">name</span><span class="pi">:</span> <span class="s">Daily Traffic Sync</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">schedule</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s1">'</span><span class="s">0</span><span class="nv"> </span><span class="s">0</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*'</span> <span class="c1"># Runs daily at midnight UTC</span>
+  <span class="na">workflow_dispatch</span><span class="pi">:</span>   <span class="c1"># Allows you to click "Run workflow" manually</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout code</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v4</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Set up Python</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-python@v5</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">python-version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.11'</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install dependencies</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">pip install requests pandas google-api-python-client google-auth-httplib2 google-auth-oauthlib</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Run script</span>
+        <span class="na">env</span><span class="pi">:</span>
+          <span class="na">GH_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
+          <span class="na">GDRIVE_JSON</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">python get_traffic.py</span></code></pre></figure> </div> <p>Configure your GitHub “Secrets”:</p> <p>In your GitHub repo, go to Settings (top tab) &gt; Secrets and variables (left sidebar) &gt; Actions.</p> <p>Click New repository secret for each of these:</p> <p>Name: GH_TOKEN (Paste your GitHub Personal Access Token).</p> <p>Name: GDRIVE_JSON (Open your Google Service Account JSON file, copy the entire text inside it, and paste it here).</p> <ol> <li>Launch the Test</li> </ol> <p>Go to the Actions tab at the top of your GitHub repo.</p> <p>Click Daily Traffic Sync (or whatever you named the workflow) on the left sidebar.</p> <p>Look for a gray bar that says “This workflow has a workflow_dispatch event trigger.”</p> <p>Click Run workflow -&gt; Run workflow (green button).</p> <p>Check your csv file if it is writte.</p> <p>Ta Da ! It is over. Now you can track your GitHub Repo.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Problem Statement: GitHub provides access to only the past 14 days of repository traffic data. Existing solutions are not simple and are not designed for the specific output I want.]]></summary></entry></feed>
