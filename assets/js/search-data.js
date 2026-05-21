@@ -59,6 +59,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/pomodoro/";
           
         },
+      },{id: "post-github-traffic-tracker-gt-14-days",
+        
+          title: "GitHub Traffic Tracker (&gt;14 days)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/github/";
+          
+        },
       },{id: "news-i-started-my-ph-d-in-bioinformatics-at-callahan-lab-at-north-carolina-state-university",
           title: 'I started my Ph.D. in Bioinformatics at Callahan Lab at North Carolina State...',
           description: "",
