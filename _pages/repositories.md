@@ -76,4 +76,11 @@ nav_order: 3
       DNA metabarcoding
     </div>
   </a>
+
+
+  <a class="repo-circle-link" href="https://github.com/oskuddar/Pomodoro_Swiftbar" target="_blank" rel="noopener noreferrer">
+    <div class="repo-circle-shape repo-pomodoro">
+      Pomodoro SwiftBar
+    </div>
+  </a>
 </div>
