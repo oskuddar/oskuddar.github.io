@@ -53,6 +53,10 @@ nav_order: 3
     background: linear-gradient(135deg, #355cbb, #5b8def);
   }
 
+  .repo-pomodoro {
+  background: linear-gradient(135deg, #8a4fbf, #c084fc);
+}
+
   @media (max-width: 768px) {
     .repo-circle-shape {
       width: 180px;
