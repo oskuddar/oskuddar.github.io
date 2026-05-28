@@ -5,8 +5,6 @@ title: projects
 nav: true
 nav_order: 4
 description: 
-  <p>This section includes both <b>scientific</b> and <b>personal projects</b>.</p>
-  <p><i>Personal projects are tools I created to make my daily life easier.</i></p>
 pagination:
   enabled: true
   collection: posts
@@ -19,6 +17,9 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
+  <p>This section includes both <b>scientific</b> and <b>personal projects</b>.</p>
+  <p><i>Personal projects are tools I created to make my daily life easier.</i></p>
+  
 <div class="post">
 
 {% assign blog_name_size = site.blog_name | size %}
