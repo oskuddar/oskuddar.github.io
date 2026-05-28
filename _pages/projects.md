@@ -9,6 +9,10 @@ display_categories: [work, fun]
 horizontal: false
 ---
 
+This section includes both <b>scientific</b> and <b>personal projects</b>.
+
+<i>Personal projects are tools I created to make my daily life easier.</i>
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
