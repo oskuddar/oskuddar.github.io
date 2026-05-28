@@ -10,9 +10,11 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
+
+<p>This section includes both <b>scientific</b> and <b>personal projects</b>.</p>
+<p><i>Personal projects are tools I created to make my daily life easier.</i></p>
+
 <div class="projects">
-  <p>This section includes both <b>scientific</b> and <b>personal projects</b>.</p>
-  <p><i>Personal projects are tools I created to make my daily life easier.</i></p>
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
