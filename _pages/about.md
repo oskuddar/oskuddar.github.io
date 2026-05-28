@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a **Bioinformatics Scientist** and recently graduated from North Carolina State University, advised by [Benjamin J. Callahan](https://callahanlab.cvm.ncsu.edu/team) and [Kelly A. Meiklejohn](https://researchers.westernsydney.edu.au/en/persons/kelly-meiklejohn/). In my doctoral research, I applied bioinformatics to forensic science, where I compared measurement methods in terms of concordance, spatial localization, and climate prediction.
+I am a **Bioinformatics Scientist** and recently graduated from North Carolina State University, advised by [Benjamin J. Callahan](https://callahanlab.cvm.ncsu.edu/team) and [Kelly A. Meiklejohn](https://researchers.westernsydney.edu.au/en/persons/kelly-meiklejohn/). In my doctoral research, I developed applied methods to compared measurement methods in terms of concordance and sample provenance, specifically spatial localization and prediction.
 
 My research interests span `probabilistic modeling (Bayesian inference)`, `machine learning`, `microbiome`, `gut-brain axis` and `measurement bias`.
 
