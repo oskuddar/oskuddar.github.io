@@ -17,7 +17,7 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
-  <p>This section includes both <b>[scientific](https://oskuddar.github.io/blog/#:~:text=2026%20%C2%A0%20%C2%B7-,science,-Pomodoro%20App)</b> and <b>[fun](https://oskuddar.github.io/blog/#:~:text=2026%20%C2%A0%20%C2%B7-,fun,-GitHub%20Traffic%20Tracker) projects</b>.</p>
+  <p>This section includes both <b>[scientific](https://oskuddar.github.io/blog/category/science/)</b> and <b>[fun](https://oskuddar.github.io/blog/category/fun/) projects</b>.</p>
   <p><i>Fun projects are tools I created to make my life easier.</i></p>
 
 <div class="post">
