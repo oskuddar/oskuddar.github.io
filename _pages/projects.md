@@ -7,11 +7,9 @@ nav: false
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false
+intro: This section includes both <b>scientific</b> and <b>personal projects</b>.
+note: Personal projects are tools I created to make my daily life easier.
 ---
-
-This section includes both <b>scientific</b> and <b>personal projects</b>.
-
-<i>Personal projects are tools I created to make my daily life easier.</i>
 
 <!-- pages/projects.md -->
 <div class="projects">
