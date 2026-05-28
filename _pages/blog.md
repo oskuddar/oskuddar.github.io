@@ -4,6 +4,9 @@ permalink: /blog/
 title: projects
 nav: true
 nav_order: 4
+description: 
+  <p>This section includes both <b>scientific</b> and <b>personal projects</b>.</p>
+  <p><i>Personal projects are tools I created to make my daily life easier.</i></p>
 pagination:
   enabled: true
   collection: posts
