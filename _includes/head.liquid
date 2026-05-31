@@ -1,6 +1,10 @@
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
+{% if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{% endif %}
+
 {% if site.google_analytics %}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -11,6 +15,29 @@
     gtag('config', '{{ site.google_analytics }}');
   </script>
 {% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ozge Shera Kuddar",
+  "alternateName": [
+    "Ozge Kuddar",
+    "Özge Kuddar",
+    "Özge Shera Kuddar",
+    "Ozge Shera Kuddar",
+    "Ozge S Kuddar",
+    "Özge S Kuddar",
+    "Özge S. Kuddar",
+    "Ozge S. Kuddar",
+    "O. S. Kuddar"
+  ],
+  "url": "https://oskuddar.github.io",
+  "sameAs": [
+    "https://github.com/oskuddar"
+  ]
+}
+</script>
 
 <!-- Security: Content Security Policy -->
 <!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
