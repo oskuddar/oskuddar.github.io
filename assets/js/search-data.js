@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-fastai-notes",
-          title: "Fastai Notes",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/fastai-notes/";
-          },
-        },{id: "nav-roles",
+  },{id: "nav-roles",
           title: "roles",
           description: "",
           section: "Navigation",
