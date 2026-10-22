@@ -29,7 +29,7 @@
   const generateId = () => crypto?.randomUUID?.() ?? `goal-${Date.now()}-${Math.random().toString(36).slice(2)}`;
   const now = () => new Date().toISOString();
   const defaultGoals = () => [];
-  const freshState = () => ({version:1,goals:defaultGoals(),events:[],dayNotes:{},schedule:[],agendaWindow:{start:'08:00',end:'20:00'},calendarName:'My calendar',calendarHourHeight:72});
+  const freshState = () => ({version:1,goals:defaultGoals(),events:[],dayNotes:{},schedule:[],agendaWindow:{start:'08:00',end:'20:00'},calendarName:'orbit.',calendarHourHeight:72});
   const readEvents = value => Array.isArray(value)?value.filter(e=>e&&typeof e==='object'&&typeof e.type==='string'&&typeof e.at==='string'):[];
   const validDate=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&!Number.isNaN(new Date(value+'T12:00:00').getTime())&&value===(()=>{const d=new Date(value+'T12:00:00');return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;})();
   function sanitizeRepeat(value){if(!value||!['day','week','month'].includes(value.unit)||!validDate(value.start)||!validDate(value.end)||value.end<value.start)return null;return {unit:value.unit,interval:Math.max(1,Math.min(365,Math.floor(Number(value.interval)||1))),start:value.start,end:value.end,moves:Object.fromEntries(Object.entries(value.moves&&typeof value.moves==='object'?value.moves:{}).filter(([from,to])=>validDate(from)&&validDate(to))),ticks:Array.isArray(value.ticks)?[...new Set(value.ticks.filter(validDate))]:[]};}
@@ -38,7 +38,7 @@
   const cleanAgenda=value=>Object.fromEntries(Object.entries(value&&typeof value==='object'?value:{}).filter(([date])=>validDate(date)).map(([date,entry])=>[date,{time:/^(?:[01]\d|2[0-3]):(?:00|15|30|45)$/.test(entry?.time||'')?entry.time:'',notes:cleanNotes(entry?.notes)}]));
   const minutesOf=time=>{const [h,m]=String(time).split(':').map(Number);return h*60+m;};
   const timeOf=minutes=>`${String(Math.floor((minutes%1440)/60)).padStart(2,'0')}:${String((minutes%1440)%60).padStart(2,'0')}`;
-  const cleanCalendarName=value=>typeof value==='string'&&value.trim()?value.trim().slice(0,48):'My calendar';
+  const cleanCalendarName=value=>typeof value==='string'&&value.trim()?value.trim().slice(0,48):'orbit.';
   const cleanWindow=value=>{const start=/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(value?.start||'')?value.start:'08:00';let end=/^(?:(?:[01]\d|2[0-3]):[0-5]\d|24:00)$/.test(value?.end||'')?value.end:'20:00';if(end==='00:00')end='24:00';return minutesOf(end)>minutesOf(start)&&minutesOf(end)<=1440?{start,end}:{start:'08:00',end:'20:00'};};
   function cleanSchedule(value,goals=[]){
     if(!Array.isArray(value))return goals.flatMap(goal=>Object.entries(goal.agenda||{}).map(([date,entry])=>({id:'migrated-'+goal.id+'-'+date,date,title:goal.title,time:entry.time||'09:00',duration:45,taskId:goal.id,projectId:'',notes:cleanNotes(entry.notes),color:'',done:false})));
