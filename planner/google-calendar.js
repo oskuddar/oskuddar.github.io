@@ -15,7 +15,7 @@
     try{await loadIdentity();client??=window.google.accounts.oauth2.initTokenClient({client_id:id,scope,callback:response=>{
       if(response.error){status('Google access was not granted. Your local plans are unchanged.');return;}
       if(!window.google.accounts.oauth2.hasGrantedAllScopes(response,scope)){status('Allow access to calendar availability to display busy times.');return;}
-      token=response.access_token;expires=Date.now()+Number(response.expires_in||3600)*1000;cache=null;generation++;controls();refresh();
+      status('Google authorized · preparing availability…');token=response.access_token;expires=Date.now()+Number(response.expires_in||3600)*1000;cache=null;generation++;controls();refresh();
     },error_callback:()=>status('Sign-in closed or blocked. Click Connect Google Calendar to retry.')});client.requestAccessToken();}catch(error){status(error.message);}
   }
   function paint(){
@@ -40,7 +40,7 @@
       if(response.status===401){token='';cache=null;controls();throw Error('Google connection expired. Click Reconnect Google.');}
       if(!response.ok)throw Error('Could not load Google availability. Check calendar access and try Refresh.');
       const data=await response.json(),calendar=data.calendars?.primary;if(!calendar||calendar.errors?.length)throw Error('Google could not read your primary calendar availability.');
-      if(run!==generation)return;cache={key,busy:calendar.busy||[]};paint();status('Google connected · primary calendar · busy times only');
+      if(run!==generation)return;cache={key,busy:calendar.busy||[]};paint();status('Google connected · '+cache.busy.length+' busy intervals · primary calendar · Day/Week view');
     }catch(error){if(run===generation){cache=null;paint();status(error.message);}}finally{if(inflight===key)inflight='';}
   }
   el('googleCalendarConnect').addEventListener('click',connect);
