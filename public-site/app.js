@@ -1006,6 +1006,7 @@
     document.addEventListener('keydown',event=>{if(event.key==='Escape'){selectedPlans.clear();renderPlanCalendar();closeEditor();closeReschedule();if(activeScheduleId)dismissPlanEditor();}});
   }
   $('todayLabel').textContent=new Date().toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'});
+  window.PLANNER_OPEN_GOOGLE=timestamp=>{const date=new Date(timestamp);agendaDay=dayKey(date);agendaView='day';plannerState.agendaWindow={start:'00:00',end:'24:00'};activeScheduleId=null;renderReport();const block=$('scheduleRows').querySelector?.('.google-busy');block?.scrollIntoView?.({block:'center',behavior:'smooth'});};
   $('calendarViewport').addEventListener('wheel',zoomCalendar,{passive:false});
   window.addEventListener('resize',()=>{if(activeView==='report'){renderPlanCalendar();positionCalendarEditor();}});
   window.addEventListener('beforeunload',event=>{if(pendingSave){event.preventDefault();event.returnValue='';}});
