@@ -11,14 +11,15 @@
     if(window.google?.accounts?.oauth2)return Promise.resolve();
     return loading??=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://accounts.google.com/gsi/client';script.async=true;script.onload=resolve;script.onerror=()=>{loading=null;reject(Error('Google sign-in could not load. Check your internet connection.'));};document.head.appendChild(script);});
   }
-  async function connect(){
+  function connect(){
     if(!/^https?:$/.test(location.protocol)){status('Open the hosted planner to connect Google. Local files cannot use Google sign-in.');return;}
     const id=window.ORBIT_CONFIG?.googleClientId;if(!id){status('Google Client ID is missing.');return;}
-    try{await loadIdentity();client??=window.google.accounts.oauth2.initTokenClient({client_id:id,scope,callback:response=>{
+    if(!window.google?.accounts?.oauth2){status('Loading Google sign-in…');loadIdentity().then(()=>status('Google sign-in ready. Click Connect Google Calendar.')).catch(error=>status(error.message));return;}
+    try{client??=window.google.accounts.oauth2.initTokenClient({client_id:id,scope,callback:response=>{
       if(response.error){status('Google access was not granted. Your local plans are unchanged.');return;}
       if(!window.google.accounts.oauth2.hasGrantedAllScopes(response,scope)){status('Allow access to read-only calendar events to display details.');return;}
       status('Google authorized · preparing availability…');token=response.access_token;expires=Date.now()+Number(response.expires_in||3600)*1000;cache=null;generation++;controls();refresh();
-    },error_callback:()=>status('Sign-in closed or blocked. Click Connect Google Calendar to retry.')});client.requestAccessToken();}catch(error){status(error.message);}
+    },error_callback:error=>status(error.type==='popup_failed_to_open'?'Google popup blocked. Allow popups for this website, then click Connect Google Calendar.':'Google sign-in closed. Click Connect Google Calendar to retry.')});client.requestAccessToken();}catch(error){status(error.message);}
   }
   function paint(){
     document.querySelectorAll('.google-busy').forEach(node=>node.remove());

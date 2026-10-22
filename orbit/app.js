@@ -103,7 +103,7 @@
   }
   function persist() {
     pendingSave=true;
-    if(!fileSavingAvailable){$('saveIndicator').textContent='Choose a save folder · changes not yet saved';return;}
+    if(!fileSavingAvailable){$('saveIndicator').textContent=window.showDirectoryPicker?'Choose a save folder · changes not yet saved':'Changes not saved · use Download copy';return;}
     const snapshot=JSON.stringify(plannerState,null,2);
     const destination=folderHandle;
     $('saveIndicator').textContent='Saving to file…';
@@ -143,7 +143,7 @@
   }
   async function initializeFileSaving(){
     $('saveIndicator').textContent='Choose a folder for automatic file saving';
-    if(!window.showDirectoryPicker){$('saveIndicator').textContent='Open in Google Chrome for folder autosave';$('connectFolderBtn').disabled=true;render();return;}
+    if(!window.showDirectoryPicker){$('saveIndicator').textContent='Folder autosave unavailable in this browser · open a file or download a copy';$('connectFolderBtn').textContent='Open saved file';$('exportBtn').textContent='Download copy';render();return;}
     const remembered=await rememberFolder();
     if(remembered){folderHandle=remembered;if(await remembered.queryPermission({mode:'readwrite'})==='granted')await connectFolder(remembered);else{$('connectFolderBtn').textContent='Reconnect folder';$('saveIndicator').textContent='Reconnect folder to load saved plans';}}
     render();
@@ -729,6 +729,7 @@
     $('connectionField').hidden=isProject;
     $('milestoneField').hidden=isProject;
     populateForm(goal);
+    if(asProject&&!goal)$('fieldTitle').value='Project Title';
     if(!goal&&!asProject)$('fieldParent').value=parentId||selectedProject||plannerState.goals.find(g=>!g.parentId)?.id||'';
     if(parentId&&!goal){const parent=goalById(parentId);$('drawerTitle').textContent='New subtask';$('fieldMilestone').value=parent?.milestoneDate||'';updateScheduleUI();}
     updateConnectionUI();
@@ -738,15 +739,15 @@
   }
   function closeEditor(){ $('editorDrawer').classList.remove('open');$('editorDrawer').setAttribute('aria-hidden','true');$('drawerOverlay').hidden=true; editingId=null; }
   function saveForm(event,keepOpen=false){
-    event.preventDefault();const title=$('fieldTitle').value.trim();if(!title)return;
-    const old=editingId?goalById(editingId):null;
+    event.preventDefault();const old=editingId?goalById(editingId):null;
     const isProject=creatingProject||!!(old&&!old.parentId);
+    const title=$('fieldTitle').value.trim()||(isProject?'Project Title':'');if(!title)return;
     if(!isProject&&!$('fieldMilestone').value)$('fieldMilestone').value=agendaDay;
-    if(!isProject&&!$('fieldParent').value){showToast('Choose a project or larger goal for this task.');return;}
     if(!isProject&&!repeatEnabled&&$('fieldFinish').value&&(!$('fieldMilestone').value||$('fieldFinish').value<$('fieldMilestone').value)){showToast('Finish must be on or after the start date.');return;}
     addDraftInput();
     const repeat=readRepeatDraft();if(repeatEnabled&&!isProject&&!repeat){showToast('Choose a start date, an end date, and a valid repeat interval.');return;}
     if(old?.repeat&&repeat){const bases=repeatDates({...repeat,moves:{}});repeat.moves=Object.fromEntries(Object.entries(old.repeat.moves||{}).filter(([base])=>bases.includes(base)));repeat.ticks=old.repeat.ticks.filter(date=>repeatDates(repeat).includes(date));}
+    if(!isProject&&!$('fieldParent').value){let project=plannerState.goals.find(g=>!g.parentId&&g.title==='Project Title');if(!project){project=sanitizeGoal({id:generateId(),title:'Project Title',parentId:'',horizon:'year',status:'todo',createdAt:now(),updatedAt:now()});plannerState.goals.push(project);recordAction('created',project,{source:'default_project'});} $('fieldParent').value=project.id;selectedProject=project.id;}
     const update={title,notes:draftNotes.map(n=>({...n})),repeat:isProject?null:repeat,description:draftNotes.map(n=>n.text).join('\n'),horizon:old?.horizon??currentHorizon,status:old?.status??$('goalForm').dataset.newStatus,due:old?.due??'',milestoneScope:$('fieldScope').value,milestoneDate:isProject?'':$('fieldMilestone').value,finishDate:isProject||repeatEnabled?'':$('fieldFinish').value,checkins:old?.checkins??[],parentId:isProject?'':$('fieldParent').value,rule:null,updatedAt:now()};
     if(old){
       if((old.finishDate||'')!==update.finishDate)recordAction('date_range_changed',old,{from:{start:old.milestoneDate,finish:old.finishDate||null},to:{start:update.milestoneDate,finish:update.finishDate||null}});
@@ -998,7 +999,7 @@
     $('rescheduleDialog').addEventListener('close',()=>{reschedulingId=null;});
     $('calendarPrevious').addEventListener('click',()=>{calendarMonth=new Date(calendarMonth.getFullYear(),calendarMonth.getMonth()-1,1,12);renderCalendar();});
     $('calendarNext').addEventListener('click',()=>{calendarMonth=new Date(calendarMonth.getFullYear(),calendarMonth.getMonth()+1,1,12);renderCalendar();});
-    $('connectFolderBtn').addEventListener('click',()=>connectFolder(fileSavingAvailable?null:folderHandle));
+    $('connectFolderBtn').addEventListener('click',()=>{if(!window.showDirectoryPicker){$('fileInput').click();return;}return connectFolder(fileSavingAvailable?null:folderHandle);});
     $('newProjectBtn').addEventListener('click',()=>openEditor(null,'todo',true));
     $('bigPictureBtn').addEventListener('click',()=>{activeView='report';render();});
     $('taskViewBtn').addEventListener('click',()=>{activeView='board';render();});
