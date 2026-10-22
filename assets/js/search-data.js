@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/_pages/cv/";
-          },
         },{id: "post-scrna-qc-short-vs-long-read-sequencing",
         
           title: "scRNA QC - Short vs Long Read Sequencing",
