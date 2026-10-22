@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-cv",
-          title: "CV",
+        },{id: "nav-orbit",
+          title: "Orbit",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/_pages/cv/";
+            window.location.href = "/orbit/";
           },
         },{id: "post-scrna-qc-short-vs-long-read-sequencing",
         
