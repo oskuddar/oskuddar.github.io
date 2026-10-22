@@ -103,7 +103,7 @@
   }
   function persist() {
     pendingSave=true;
-    if(!fileSavingAvailable){$('saveIndicator').textContent=window.showDirectoryPicker?'Choose a save folder · changes not yet saved':'Changes not saved · use Download copy';return;}
+    if(!fileSavingAvailable){$('saveIndicator').textContent=window.showDirectoryPicker?'Choose a save folder · changes not yet saved':'Changes not saved · click Save file';return;}
     const snapshot=JSON.stringify(plannerState,null,2);
     const destination=folderHandle;
     $('saveIndicator').textContent='Saving to file…';
@@ -143,7 +143,7 @@
   }
   async function initializeFileSaving(){
     $('saveIndicator').textContent='Choose a folder for automatic file saving';
-    if(!window.showDirectoryPicker){$('saveIndicator').textContent='Folder autosave unavailable in this browser · open a file or download a copy';$('connectFolderBtn').textContent='Open saved file';$('exportBtn').textContent='Download copy';render();return;}
+    if(!window.showDirectoryPicker){$('saveIndicator').textContent='Start planning · Save file downloads your work';$('connectFolderBtn').textContent='Save file';$('exportBtn').textContent='Download copy';render();return;}
     const remembered=await rememberFolder();
     if(remembered){folderHandle=remembered;if(await remembered.queryPermission({mode:'readwrite'})==='granted')await connectFolder(remembered);else{$('connectFolderBtn').textContent='Reconnect folder';$('saveIndicator').textContent='Reconnect folder to load saved plans';}}
     render();
@@ -700,7 +700,7 @@
     }
   }
   function render() {$('calendarName').value=cleanCalendarName(plannerState.calendarName);document.title=cleanCalendarName(plannerState.calendarName)+' — Planner';renderNav();
-    $('projectNavigation').hidden=activeView==='report';$('newGoalBtn').textContent=activeView==='report'?'＋ New plan':'＋ New task';$('reportDashboard').hidden=activeView!=='report';$('taskControls').hidden=activeView!=='board';$('taskBoard').hidden=activeView!=='board';
+    $('projectNavigation').hidden=activeView==='report';$('newGoalBtn').hidden=activeView==='report';$('newGoalBtn').textContent='＋ New task';$('reportDashboard').hidden=activeView!=='report';$('taskControls').hidden=activeView!=='board';$('taskBoard').hidden=activeView!=='board';
     $('bigPictureBtn').classList.toggle('active',activeView==='report');$('taskViewBtn').classList.toggle('active',activeView==='board');refreshTaskViews();
   }
   function navigateTo(horizon) {if(!HORIZONS.some(h=>h.id===horizon))return;currentHorizon=horizon;showAll=false;render();}
@@ -999,7 +999,7 @@
     $('rescheduleDialog').addEventListener('close',()=>{reschedulingId=null;});
     $('calendarPrevious').addEventListener('click',()=>{calendarMonth=new Date(calendarMonth.getFullYear(),calendarMonth.getMonth()-1,1,12);renderCalendar();});
     $('calendarNext').addEventListener('click',()=>{calendarMonth=new Date(calendarMonth.getFullYear(),calendarMonth.getMonth()+1,1,12);renderCalendar();});
-    $('connectFolderBtn').addEventListener('click',()=>{if(!window.showDirectoryPicker){$('fileInput').click();return;}return connectFolder(fileSavingAvailable?null:folderHandle);});
+    $('connectFolderBtn').addEventListener('click',()=>{if(!window.showDirectoryPicker){exportBackup();return;}return connectFolder(fileSavingAvailable?null:folderHandle);});
     $('newProjectBtn').addEventListener('click',()=>openEditor(null,'todo',true));
     $('bigPictureBtn').addEventListener('click',()=>{activeView='report';render();});
     $('taskViewBtn').addEventListener('click',()=>{activeView='board';render();});
