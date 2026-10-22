@@ -1,6 +1,6 @@
 ---
 title: CV
-nav: true
+nav: false
 nav_order: 5
 sitemap: false
 ---
